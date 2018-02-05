@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="text-center">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">index</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">page2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">page3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">page4</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="jumbotron bg-blue">
+            <h1>Hello Bootstrap</h1>
+            <p>This is classic page</p>
+        </div>
+            <ul class="list-group">
+                <%posts.forEach((v)=>{%>
+                  <li class="list-group-item">
+                      <%=v.title%>
+                  </li>
+                <%})%>
+            </ul>
+    </div>
+</body>
+</html>
